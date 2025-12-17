@@ -10,7 +10,8 @@ public class EmailSendConsumer {
 
     @KafkaListener(
             topics = "email.send",
-            groupId = "email-send-group" // 컨슈머 그룹 이름
+            groupId = "email-send-group", // 컨슈머 그룹 이름
+            concurrency = "3" // 멀티 쓰레드를 활용해 병렬적으로 처리할 파티션의 개수
     )
     public void consume(String message) {
         System.out.println("Kafka로부터 받아온 메시지: " + message);
