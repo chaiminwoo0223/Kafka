@@ -1,4 +1,4 @@
-package com.example.kafkauserservice.dto;
+package com.example.kafkauserservice.event;
 
 import com.example.kafkauserservice.domain.User;
 

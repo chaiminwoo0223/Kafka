@@ -2,7 +2,7 @@ package com.example.kafkauserservice.service;
 
 import com.example.kafkauserservice.domain.User;
 import com.example.kafkauserservice.dto.SignUpRequestDto;
-import com.example.kafkauserservice.dto.UserSignedUpEvent;
+import com.example.kafkauserservice.event.UserSignedUpEvent;
 import com.example.kafkauserservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
